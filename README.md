@@ -13,3 +13,34 @@
 3. 잘못된 변수 사용 오류
 4. 자료형 범위 오류
     - 이걸 방지하려면 애초에 int가 아니라 long을 활용하자.
+
+## 3. 자료구조
+- 문제 유형에 따라 적절한 자료구조를 잘 선택하는 것이 중요하다.
+### 3.1. 배열과 리스트
+- 배열
+  - 메모리의 연속 공간에 값이 채워져 있는 형태의 자료구조
+  - 인덱스를 통해 참조 가능
+  - 배열 크기는 선언할 때 지정 나중에 못 바꿈
+- 리스트
+  - 값과 포인터를 묶은 노드라는 것을 포인터로 연결한 자료구조
+  - 동적인 데이터를 다룰 때 유용함
+  
+### 3.2. 구간합
+- 배열 A가 있을 때, A[i] ~ A[j] 의 합을 구하려면 어떻게 해야할까.
+- 단순히 반복문을 돌 수도 있겠지만, 수가 많아지면 너무 오래걸린다.
+- 이를 해결하기 위해 합 배열 S를 새로 만들건데, S[i] = A[0] + A[1] + A[2] + ... + A[i]이다.
+- 좀 더 단순히 나타내면 S[i] = S[i-1] + A[i]
+- $(A+B)\mod\ m = (A\mod m + B \mod m)\mod m$
+
+### 3.x. 주요 메소드
+1. 형 변환
+   - String -> 숫자: ```자료형.parse자료형()``` or ```자료형.valueOf()```
+   - 숫자 -> String: ```자료형.toString()``` or ```String.valueof()```
+2. 빠른 입력
+    ```java
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    StringTokenizer st = new StringTokenizer(br.readLine());
+
+    int n = Integer.parseInt(st.nextToken());
+    int m = Integer.parseInt(st.nextToken()); 
+    ```
