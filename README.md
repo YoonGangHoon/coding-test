@@ -32,15 +32,11 @@
 - 좀 더 단순히 나타내면 S[i] = S[i-1] + A[i]
 - $(A+B)\mod\ m = (A\mod m + B \mod m)\mod m$
 
-### 3.x. 주요 메소드
-1. 형 변환
-   - String -> 숫자: ```자료형.parse자료형()``` or ```자료형.valueOf()```
-   - 숫자 -> String: ```자료형.toString()``` or ```String.valueof()```
-2. 빠른 입력
-    ```java
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    StringTokenizer st = new StringTokenizer(br.readLine());
+### 3.3. 투 포인터
+- 두 개의 포인터를 사용해 시간 복잡도를 최적화
+- 연속된 구간에 대한 경우의 수를 구할 때 사용
 
-    int n = Integer.parseInt(st.nextToken());
-    int m = Integer.parseInt(st.nextToken()); 
-    ```
+### 3.4. 슬라이딩 윈도우
+- 투 포인터랑 유사
+- 투 포인터가 딱 2개의 위치만을 가지고 무언가 한다면 이건 두 점을 잡고 범위를 통째로 옮기는 느낌
+- 마치 딥러닝에서 커널 움직이는 것과 같음
