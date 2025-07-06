@@ -1,4 +1,4 @@
-package sliding_window;
+package data_structure.sliding_window;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
