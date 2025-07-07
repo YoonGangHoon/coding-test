@@ -40,3 +40,24 @@
 - 투 포인터랑 유사
 - 투 포인터가 딱 2개의 위치만을 가지고 무언가 한다면 이건 두 점을 잡고 범위를 통째로 옮기는 느낌
 - 마치 딥러닝에서 커널 움직이는 것과 같음
+
+### 3.5. 스택과 큐
+- 스택
+  - LIFO: Last In First Out
+  - 용어
+    - top: 삽입과 삭제가 일어나는 위치
+    - push: 새로운 데이터 삽입
+    - pop: 데이터를 삭제하고 확인
+    - peek: top에 있는 데이터를 단순 확인
+  - 자바에서는?
+    - ```Stack<> stack = new Stack<>();```
+- 큐
+  - FIFO: First In First Out
+  - 용어
+    - front: 가장 앞의 데이터를 가리키는 영역
+    - rear: 가장 끝 데이터를 가리키는 영역
+    - add: rear 부분에 새로운 데이터 삽입
+    - poll: front 부분 데이터 삭제 후 확인
+    - peek: front에 있는 데이터 단순 확인
+  - 자바에서는?
+    - ```Queue<> queue = new LinkedList<>()```
